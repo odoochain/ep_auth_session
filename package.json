@@ -1,6 +1,6 @@
 {
   "name": "ep_auth_session_samesite_none",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Using samesite none. Provides a route that authenticates the user with the provided sessionID parameter and redirects to the given padName",
   "main": "index.js",
   "dependencies": {},
