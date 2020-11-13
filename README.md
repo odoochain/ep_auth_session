@@ -6,7 +6,7 @@ Usefull when integrating etherpad in a application on a another domain.
 
 
 ## Install
-[![ep_auth_session](https://nodei.co/npm/ep_auth_session_samesite_none.png)](https://www.npmjs.com/package/@woeterman94/ep_auth_session_samesite_none)
+[![ep_auth_session](https://nodei.co/npm/ep_auth_session_samesite_none.png)](https://www.npmjs.com/package/ep_auth_session_samesite_none)
 
 Restart your etherpad-lite instance to recognize the plugin.
 
