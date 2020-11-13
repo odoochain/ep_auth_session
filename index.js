@@ -23,7 +23,11 @@ exports.registerRoute = function(hook_name, args, cb) {
 			redirectUrl += encodeURIComponent(req.query.padName);
 
 			if (req.query.lang) {
-				redirectUrl += "?lang=" + encodeURIComponent(req.query.lang);
+				redirectUrl += (redirectUrl.split('?')[1] ? '&':'?') + "lang=" + encodeURIComponent(req.query.lang);
+			}
+			
+			if (req.query.showChat) {
+				redirectUrl += (redirectUrl.split('?')[1] ? '&':'?') + "showChat=" + encodeURIComponent(req.query.showChat);
 			}
 
 			r += 'document.location.href="' + redirectUrl + '";' + "\n";
@@ -35,4 +39,7 @@ exports.registerRoute = function(hook_name, args, cb) {
 
 		res.send(r);
 	});
+	
+	
+	
 };
