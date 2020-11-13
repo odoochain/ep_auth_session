@@ -1,9 +1,9 @@
 {
   "parts": [
     {
-      "name": "auth_session",
+      "name": "auth_session_samesite_none",
       "hooks": {
-        "expressCreateServer" : "ep_auth_session/index:registerRoute"
+        "expressCreateServer" : "ep_auth_session_samesite_none/index:registerRoute"
       }
     }
   ]
